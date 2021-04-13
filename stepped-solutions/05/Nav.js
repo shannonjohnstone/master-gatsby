@@ -1,9 +1,13 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
+const NavStyles = styled.nav`
+  background: green;
+`
+
 export default function Nav() {
   return (
-    <nav>
+    <NavStyles>
       <ul>
         <li>
           <Link to="/">Hot Now</Link>
@@ -23,6 +27,6 @@ export default function Nav() {
           <Link to="/order">Order Ahead!</Link>
         </li>
       </ul>
-    </nav>
+    </NavStyles>
   );
 }
